@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Black Hill</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== LOADER ===================== -->
+  <div class="loader">
+    <div class="loader-text">
+      <span>B</span><span>L</span><span>A</span><span>C</span><span>K</span>
+      <span>&nbsp;</span>
+      <span>H</span><span>I</span><span>L</span><span>L</span>
+    </div>
+  </div>
+
+  <!-- ===================== SCROLL PROGRESS ===================== -->
+  <div class="scroll-progress"></div>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor cursor-outer"></div>
+  <div class="cursor cursor-inner"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Black Hill</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="shop.html" class="nav-link active">Shop</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="shop.html" class="mobile-link active">Shop</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title">THE COLLECTION</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">&gt;</span>
+        <span>Shop</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FILTER BAR ===================== -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-bar-inner">
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="suits">Suits</button>
+          <button class="filter-pill" data-filter="shirts">Shirts</button>
+          <button class="filter-pill" data-filter="shoes">Shoes</button>
+          <button class="filter-pill" data-filter="accessories">Accessories</button>
+          <button class="filter-pill" data-filter="new">New Arrivals</button>
+        </div>
+        <div class="filter-right">
+          <select class="sort-select">
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+          <div class="view-toggle">
+            <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+            <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PRODUCT GRID ===================== -->
+  <section class="section" style="padding-top: 2rem">
+    <div class="container">
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card" data-category="suits">
+          <div class="product-image">
+            <div class="product-image-placeholder">Classic Navy Suit</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">SUITS</span>
+            <h3 class="product-name">Classic Navy Suit</h3>
+            <p class="product-price">$1,299.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="shirts">
+          <div class="product-image">
+            <div class="product-image-placeholder">White Oxford Shirt</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">SHIRTS</span>
+            <h3 class="product-name">White Oxford Shirt</h3>
+            <p class="product-price">$189.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="shoes">
+          <div class="product-image">
+            <div class="product-image-placeholder">Italian Leather Shoes</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">SHOES</span>
+            <h3 class="product-name">Italian Leather Shoes</h3>
+            <p class="product-price">$459.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-image">
+            <div class="product-image-placeholder">Silk Tie Collection</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ACCESSORIES</span>
+            <h3 class="product-name">Silk Tie Collection</h3>
+            <p class="product-price">$129.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="outerwear">
+          <div class="product-image">
+            <div class="product-image-placeholder">Wool Overcoat</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">OUTERWEAR</span>
+            <h3 class="product-name">Wool Overcoat</h3>
+            <p class="product-price">$899.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="knitwear">
+          <div class="product-image">
+            <div class="product-image-placeholder">Cashmere Sweater</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">KNITWEAR</span>
+            <h3 class="product-name">Cashmere Sweater</h3>
+            <p class="product-price">$349.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-image">
+            <div class="product-image-placeholder">Leather Belt</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ACCESSORIES</span>
+            <h3 class="product-name">Leather Belt</h3>
+            <p class="product-price">$159.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-image">
+            <div class="product-image-placeholder">Silver Cufflinks</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ACCESSORIES</span>
+            <h3 class="product-name">Silver Cufflinks</h3>
+            <p class="product-price">$89.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card" data-category="suits">
+          <div class="product-image">
+            <div class="product-image-placeholder">Tailored Blazer</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">SUITS</span>
+            <h3 class="product-name">Tailored Blazer</h3>
+            <p class="product-price">$799.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card" data-category="trousers">
+          <div class="product-image">
+            <div class="product-image-placeholder">Dress Pants</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">TROUSERS</span>
+            <h3 class="product-name">Dress Pants</h3>
+            <p class="product-price">$289.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-image">
+            <div class="product-image-placeholder">Pocket Square Set</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ACCESSORIES</span>
+            <h3 class="product-name">Pocket Square Set</h3>
+            <p class="product-price">$69.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card" data-category="accessories">
+          <div class="product-image">
+            <div class="product-image-placeholder">Luxury Watch</div>
+            <div class="product-overlay">
+              <a href="product.html" class="btn btn-secondary">Quick View</a>
+              <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">ACCESSORIES</span>
+            <h3 class="product-name">Luxury Watch</h3>
+            <p class="product-price">$2,499.00</p>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+      </div><!-- /product-grid -->
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn page-btn-next">Next <i class="fas fa-arrow-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <div class="cart-overlay"></div>
+  <div class="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items populated by JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span class="cart-subtotal-price">$0.00</span>
+      </div>
+      <a href="#" class="btn btn-primary cart-checkout">Checkout</a>
+      <button class="btn btn-secondary cart-continue">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-logo">Black Hill</h4>
+          <p class="footer-desc">Crafting distinguished menswear for the modern gentleman since 1987. Every piece tells a story of heritage, quality, and timeless elegance.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Shop All</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="about.html">Our Story</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 142 Savile Row, London W1S 3PR</li>
+            <li><i class="fas fa-phone"></i> +44 20 7946 0958</li>
+            <li><i class="fas fa-envelope"></i> concierge@blackhill.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Sat: 10am - 7pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Black Hill. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
