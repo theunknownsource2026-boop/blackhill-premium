@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- LOADING SCREEN ----
   const loader = document.querySelector('.loader');
   if (loader) {
-    const letters = loader.querySelectorAll('.loader-text span');
+    const letters = loader.querySelectorAll('.loader-text span, .loader-brand span');
     letters.forEach((letter, i) => {
       letter.style.animationDelay = `${i * 0.08}s`;
     });
@@ -426,24 +426,40 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---- FILTER PILLS ----
+  // Filter pills - actually filter products
   document.querySelectorAll('.filter-pill').forEach(pill => {
     pill.addEventListener('click', () => {
-      pill.parentElement.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
+      const filter = pill.dataset.filter || pill.textContent.trim().toLowerCase();
+      document.querySelectorAll('.product-card').forEach(card => {
+        const category = card.dataset.category || '';
+        if (filter === 'all' || category.includes(filter)) {
+          card.style.display = '';
+          gsap.fromTo(card, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4 });
+        } else {
+          card.style.display = 'none';
+        }
+      });
     });
   });
 
   // ---- VIEW TOGGLE ----
-  document.querySelectorAll('.view-toggle button').forEach(btn => {
+  // View toggle - grid vs list
+  document.querySelectorAll('.view-toggle button, .view-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      const parent = btn.closest('.view-toggle') || btn.parentElement;
+      parent.querySelectorAll('button, .view-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const grid = document.querySelector('.product-grid');
       if (grid) {
-        if (btn.classList.contains('view-list')) {
+        const isListView = btn.classList.contains('view-list') || btn.dataset.view === 'list';
+        if (isListView) {
           grid.style.gridTemplateColumns = '1fr';
+          grid.querySelectorAll('.product-card').forEach(c => c.style.display = 'flex');
         } else {
           grid.style.gridTemplateColumns = '';
+          grid.querySelectorAll('.product-card').forEach(c => c.style.display = '');
         }
       }
     });
@@ -507,6 +523,37 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
+  // ---- CONTACT FORM VALIDATION ----
+  const contactForm = document.querySelector('.contact-form form, form.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputs = contactForm.querySelectorAll('input[required], textarea[required]');
+      let valid = true;
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          valid = false;
+          input.style.borderColor = '#ff4444';
+          setTimeout(() => { input.style.borderColor = ''; }, 2000);
+        }
+      });
+      const email = contactForm.querySelector('input[type="email"]');
+      if (email && email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        valid = false;
+        email.style.borderColor = '#ff4444';
+      }
+      if (valid) {
+        const btn = contactForm.querySelector('button[type="submit"], .btn-submit');
+        if (btn) {
+          btn.textContent = 'Message Sent!';
+          btn.style.background = '#2ecc71';
+          contactForm.reset();
+          setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 3000);
+        }
+      }
+    });
+  }
 
   // Fade in on page load
   document.body.style.opacity = '0';
