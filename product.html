@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Navy Suit | Black Hill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== LOADER ========== -->
+    <div class="loader">
+        <div class="loader-brand">
+            <span>B</span><span>L</span><span>A</span><span>C</span><span>K</span>
+            <span>&nbsp;</span>
+            <span>H</span><span>I</span><span>L</span><span>L</span>
+        </div>
+    </div>
+
+    <!-- ========== SCROLL PROGRESS ========== -->
+    <div class="scroll-progress"></div>
+
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">BLACK HILL</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" aria-label="Open cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="shop.html" class="mobile-link active">Shop</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero" style="min-height:35vh">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="shop.html">Shop</a>
+                <span>/</span>
+                <span>Classic Navy Suit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCT DETAIL ========== -->
+    <section class="section" style="padding-top:2rem">
+        <div class="container">
+            <div class="product-detail">
+
+                <!-- Left Column - Gallery -->
+                <div class="product-gallery">
+                    <div class="gallery-main">
+                        <div class="gallery-placeholder">Classic Navy Suit</div>
+                    </div>
+                    <div class="gallery-thumbs">
+                        <div class="gallery-thumb active">Front</div>
+                        <div class="gallery-thumb">Back</div>
+                        <div class="gallery-thumb">Detail</div>
+                        <div class="gallery-thumb">Styled</div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Info -->
+                <div class="product-info-panel">
+                    <span class="product-detail-category">SUITS &amp; BLAZERS</span>
+                    <h1 class="product-detail-name">Classic Navy Suit</h1>
+                    <div class="product-detail-price">$1,299.00</div>
+
+                    <div class="product-rating">
+                        <i class="fas fa-star" style="color:var(--gold)"></i>
+                        <i class="fas fa-star" style="color:var(--gold)"></i>
+                        <i class="fas fa-star" style="color:var(--gold)"></i>
+                        <i class="fas fa-star" style="color:var(--gold)"></i>
+                        <i class="fas fa-star" style="color:var(--gold)"></i>
+                        <span class="rating-text">(4.8) 124 Reviews</span>
+                    </div>
+
+                    <p class="product-description">
+                        Impeccably crafted from premium Italian wool, the Classic Navy Suit is the cornerstone of every distinguished wardrobe. Featuring a modern slim fit silhouette with hand-stitched lapels, full canvas construction, and natural horn buttons, this suit delivers unparalleled refinement for the boardroom, formal events, and everything in between.
+                    </p>
+
+                    <!-- Color -->
+                    <div class="option-group">
+                        <span class="option-label">Color</span>
+                        <div class="color-swatches">
+                            <button class="color-swatch active" style="background:#1a2d45" title="Navy" aria-label="Navy"></button>
+                            <button class="color-swatch" style="background:#374151" title="Charcoal" aria-label="Charcoal"></button>
+                            <button class="color-swatch" style="background:#111827" title="Black" aria-label="Black"></button>
+                        </div>
+                    </div>
+
+                    <!-- Size -->
+                    <div class="option-group">
+                        <div class="option-label-row">
+                            <span class="option-label">Size</span>
+                            <a href="#" class="size-guide-link">Size Guide</a>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn active">L</button>
+                            <button class="size-btn">XL</button>
+                            <button class="size-btn">XXL</button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="quantity-selector">
+                        <button class="qty-btn qty-minus" aria-label="Decrease quantity">&minus;</button>
+                        <input type="number" class="qty-input" value="1" min="1" max="10" aria-label="Quantity">
+                        <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                        <button class="btn-wishlist" aria-label="Add to wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-rotate-left"></i>
+                            <span>Easy Returns</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-gem"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+
+                    <!-- Product Tabs -->
+                    <div class="product-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="description">Description</button>
+                            <button class="tab-btn" data-tab="materials">Materials &amp; Care</button>
+                            <button class="tab-btn" data-tab="shipping">Shipping &amp; Returns</button>
+                        </div>
+
+                        <div class="tab-panel active" id="description">
+                            <p>The Classic Navy Suit is tailored from 100% Super 150s Italian wool sourced from the finest mills in Biella. The full canvas construction allows the jacket to drape naturally over time, molding to your body for a truly personalized fit.</p>
+                            <p>The modern slim fit features a slightly narrower lapel, tapered trousers, and clean shoulders that create a sharp, contemporary silhouette without sacrificing comfort. Half-lined for breathability, it transitions effortlessly from cool autumn mornings to warm spring evenings.</p>
+                            <p>Style it with a crisp white Oxford and polished loafers for the office, or dress it down with a fine-knit turtleneck for sophisticated weekend wear. A navy suit this refined is not just clothing -- it is a statement of intent.</p>
+                        </div>
+
+                        <div class="tab-panel" id="materials">
+                            <h4>Fabric Composition</h4>
+                            <ul>
+                                <li>100% Italian Wool (Super 150s)</li>
+                                <li>Full Canvas Construction</li>
+                                <li>Natural Horn Buttons</li>
+                                <li>Bemberg Cupro Lining</li>
+                            </ul>
+                            <h4>Care Instructions</h4>
+                            <ul>
+                                <li>Dry Clean Only</li>
+                                <li>Store on a wide, contoured hanger</li>
+                                <li>Steam to remove wrinkles -- avoid direct ironing</li>
+                                <li>Rotate wear to allow fabric recovery between uses</li>
+                                <li>Use a garment bag for travel and long-term storage</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-panel" id="shipping">
+                            <h4>Shipping</h4>
+                            <p>Complimentary standard shipping on all orders over $500. Standard delivery takes 5-7 business days. Express shipping is available for $25 with delivery in 2-3 business days. All orders are carefully packaged in our signature Black Hill garment box.</p>
+                            <h4>Returns</h4>
+                            <p>We offer a 30-day return policy on all full-price items. Items must be unworn, unaltered, and returned with all original tags attached. To initiate a return, contact our customer service team and we will provide a prepaid shipping label. Refunds are processed within 5-7 business days of receiving the returned item.</p>
+                        </div>
+                    </div>
+
+                </div><!-- /product-info-panel -->
+            </div><!-- /product-detail -->
+        </div>
+    </section>
+
+    <!-- ========== RELATED PRODUCTS ========== -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header animate">
+                <span class="section-label">YOU MAY ALSO LIKE</span>
+                <h2 class="section-title">Related Products</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="related-swiper swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Related 1 -->
+                    <div class="swiper-slide">
+                        <div class="product-card animate">
+                            <div class="product-image">
+                                <div class="product-badge">New</div>
+                                <div class="product-overlay">
+                                    <button class="overlay-btn" aria-label="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="overlay-btn" aria-label="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">SUITS</span>
+                                <h3 class="product-name">Tailored Blazer</h3>
+                                <span class="product-price">$799.00</span>
+                            </div>
+                            <button class="btn btn-primary product-add">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Related 2 -->
+                    <div class="swiper-slide">
+                        <div class="product-card animate">
+                            <div class="product-image">
+                                <div class="product-overlay">
+                                    <button class="overlay-btn" aria-label="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="overlay-btn" aria-label="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">TROUSERS</span>
+                                <h3 class="product-name">Dress Pants</h3>
+                                <span class="product-price">$289.00</span>
+                            </div>
+                            <button class="btn btn-primary product-add">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Related 3 -->
+                    <div class="swiper-slide">
+                        <div class="product-card animate">
+                            <div class="product-image">
+                                <div class="product-overlay">
+                                    <button class="overlay-btn" aria-label="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="overlay-btn" aria-label="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">SHIRTS</span>
+                                <h3 class="product-name">White Oxford Shirt</h3>
+                                <span class="product-price">$189.00</span>
+                            </div>
+                            <button class="btn btn-primary product-add">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Related 4 -->
+                    <div class="swiper-slide">
+                        <div class="product-card animate">
+                            <div class="product-image">
+                                <div class="product-overlay">
+                                    <button class="overlay-btn" aria-label="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="overlay-btn" aria-label="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">ACCESSORIES</span>
+                                <h3 class="product-name">Silk Tie Collection</h3>
+                                <span class="product-price">$129.00</span>
+                            </div>
+                            <button class="btn btn-primary product-add">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div><!-- /swiper-wrapper -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STICKY CART BAR ========== -->
+    <div class="sticky-cart">
+        <div class="sticky-cart-info">
+            <span class="sticky-cart-name">Classic Navy Suit</span>
+            <span class="sticky-cart-price">$1,299.00</span>
+        </div>
+        <button class="btn btn-primary add-to-cart"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+    </div>
+
+    <!-- ========== SIZE GUIDE MODAL ========== -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Size Guide</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <table class="size-table">
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Chest (in)</th>
+                            <th>Waist (in)</th>
+                            <th>Length (in)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>S</td><td>36-38</td><td>30-32</td><td>28</td></tr>
+                        <tr><td>M</td><td>38-40</td><td>32-34</td><td>29</td></tr>
+                        <tr><td>L</td><td>40-42</td><td>34-36</td><td>30</td></tr>
+                        <tr><td>XL</td><td>42-44</td><td>36-38</td><td>31</td></tr>
+                        <tr><td>XXL</td><td>44-46</td><td>38-40</td><td>32</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CART DRAWER ========== -->
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span class="subtotal-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary cart-checkout">Checkout</button>
+            <button class="btn btn-ghost cart-continue">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-brand">BLACK HILL</h3>
+                    <p class="footer-about">Redefining modern menswear with timeless craftsmanship and contemporary design since 2024.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">Suits</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns &amp; Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, New York, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@blackhill.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 10AM - 8PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Black Hill. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
