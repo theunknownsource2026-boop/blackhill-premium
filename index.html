@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,18 +35,21 @@
 
     <!-- ========== 4. NAVBAR ========== -->
     <nav class="navbar">
-        <a href="index.html" class="nav-logo">Black Hill</a>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="shop.html" class="nav-link">Shop</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-        <div class="nav-right">
-            <button class="cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></button>
-            <button class="hamburger"><span></span><span></span><span></span></button>
-        </div>
-    </nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">BLACK HILL</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-search" aria-label="Search"><i class="fas fa-search"></i></button>
+      <button class="cart-toggle" aria-label="Cart"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></button>
+      <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
 
     <!-- ========== 5. MOBILE MENU ========== -->
     <div class="mobile-menu">
@@ -89,9 +95,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Classic Navy Suit</div>
+                                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=750&fit=crop" alt="Classic Navy Suit" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -107,9 +113,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">White Oxford Shirt</div>
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=750&fit=crop" alt="White Oxford Shirt" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -125,9 +131,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Italian Leather Shoes</div>
+                                <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&h=750&fit=crop" alt="Italian Leather Shoes" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -143,9 +149,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Silk Tie Collection</div>
+                                <img src="https://images.unsplash.com/photo-1487222477894-f57e30b7b637?w=600&h=750&fit=crop" alt="Silk Tie Collection" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -161,9 +167,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Tailored Blazer</div>
+                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&h=750&fit=crop" alt="Tailored Blazer" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -179,9 +185,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Wool Overcoat</div>
+                                <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=600&h=750&fit=crop" alt="Wool Overcoat" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -197,9 +203,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Luxury Watch</div>
+                                <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=600&h=750&fit=crop" alt="Luxury Watch" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -215,9 +221,9 @@
                     <div class="swiper-slide">
                         <div class="product-card">
                             <div class="product-image">
-                                <div class="product-image-placeholder">Leather Briefcase</div>
+                                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=750&fit=crop" alt="Leather Briefcase" style="width:100%;height:100%;object-fit:cover;">
                                 <div class="product-overlay">
-                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <a href="product.html" class="btn btn-secondary">Quick View</a>
                                     <button class="btn btn-primary btn-small">Add to Cart</button>
                                 </div>
                             </div>
@@ -251,25 +257,25 @@
             </div>
 
             <div class="category-grid">
-                <a href="shop.html" class="category-card animate">
+                <a href="shop.html" class="category-card animate" style="background-image:url('https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=600&fit=crop');background-size:cover;background-position:center;">
                     <div class="category-content">
                         <h3 class="category-name">Suits &amp; Blazers</h3>
                         <span class="category-count">48 Products</span>
                     </div>
                 </a>
-                <a href="shop.html" class="category-card animate">
+                <a href="shop.html" class="category-card animate" style="background-image:url('https://images.unsplash.com/photo-1614975059251-992f11792571?w=500&h=600&fit=crop');background-size:cover;background-position:center;">
                     <div class="category-content">
                         <h3 class="category-name">Shirts &amp; Tops</h3>
                         <span class="category-count">72 Products</span>
                     </div>
                 </a>
-                <a href="shop.html" class="category-card animate">
+                <a href="shop.html" class="category-card animate" style="background-image:url('https://images.unsplash.com/photo-1544923246-77307dd270c9?w=500&h=600&fit=crop');background-size:cover;background-position:center;">
                     <div class="category-content">
                         <h3 class="category-name">Shoes &amp; Accessories</h3>
                         <span class="category-count">56 Products</span>
                     </div>
                 </a>
-                <a href="shop.html" class="category-card animate">
+                <a href="shop.html" class="category-card animate" style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1000&fit=crop');background-size:cover;background-position:center;">
                     <div class="category-content">
                         <h3 class="category-name">New Arrivals</h3>
                         <span class="category-count">24 Products</span>
@@ -308,7 +314,7 @@
         <div class="container">
             <div class="editorial-grid">
                 <div class="editorial-image slide-left animate">
-                    <div class="editorial-image-placeholder"></div>
+                    <img src="https://images.unsplash.com/photo-1480429370612-2cd63e40da21?w=800&h=1000&fit=crop" alt="The Art of Dressing Well" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
                 </div>
                 <div class="editorial-content slide-right animate">
                     <h3>The Art of Dressing Well</h3>
@@ -359,61 +365,60 @@
 
     <!-- ========== 13. FOOTER ========== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="nav-logo">Black Hill</a>
-                    <p>Crafting exceptional menswear for the modern gentleman. Where tradition meets contemporary elegance.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="shop.html">Shop All</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Best Sellers</a></li>
-                        <li><a href="#">Sale</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Customer Service</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Shipping &amp; Returns</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="mailto:info@blackhill.com">info@blackhill.com</a></li>
-                        <li><a href="tel:+15550000000">+1 (555) 000-0000</a></li>
-                        <li><a href="#">123 Fashion Ave, NYC</a></li>
-                        <li><a href="#">Mon-Sat: 10AM-8PM</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">&copy; 2024 Black Hill. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">BLACK HILL</a>
+        <p class="footer-desc">Redefining modern menswear since 2024. Crafted with precision, worn with confidence.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </footer>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="shop.html">New Arrivals</a></li>
+          <li><a href="shop.html">Best Sellers</a></li>
+          <li><a href="shop.html">Collections</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="contact.html">Size Guide</a></li>
+          <li><a href="contact.html">Shipping & Returns</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">Track Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 48 Savile Row, London W1S 3PR</p>
+        <p><i class="fas fa-phone"></i> +44 20 7946 0958</p>
+        <p><i class="fas fa-envelope"></i> concierge@blackhill.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Black Hill. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- ========== 14. BACK TO TOP ========== -->
     <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
     <!-- ========== SCRIPTS ========== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
