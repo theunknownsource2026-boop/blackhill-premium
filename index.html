@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Hill | Luxury Menswear</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== 1. LOADING SCREEN ========== -->
+    <div class="loader">
+        <div class="loader-text">
+            <span>B</span><span>L</span><span>A</span><span>C</span><span>K</span>
+            <span>&nbsp;</span>
+            <span>H</span><span>I</span><span>L</span><span>L</span>
+        </div>
+    </div>
+
+    <!-- ========== 2. SCROLL PROGRESS ========== -->
+    <div class="scroll-progress"></div>
+
+    <!-- ========== 3. CUSTOM CURSOR ========== -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- ========== 4. NAVBAR ========== -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Black Hill</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="shop.html" class="nav-link">Shop</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <button class="cart-btn"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></button>
+            <button class="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ========== 5. MOBILE MENU ========== -->
+    <div class="mobile-menu">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="shop.html" class="mobile-link">Shop</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- ========== 6. HERO SECTION ========== -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span>B</span><span>L</span><span>A</span><span>C</span><span>K</span><span>&nbsp;</span><span>H</span><span>I</span><span>L</span><span>L</span>
+            </h1>
+            <p class="hero-subtitle">LUXURY MENSWEAR &mdash; EST. 2024</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+                <a href="about.html" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== 7. FEATURED PRODUCTS ========== -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header animate">
+                <span class="section-label">CURATED SELECTION</span>
+                <h2 class="section-title">Featured Collection</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="featured-swiper swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Product 1 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Classic Navy Suit</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">SUITS</span>
+                                <h3 class="product-name">Classic Navy Suit</h3>
+                                <span class="product-price">$1,299</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">White Oxford Shirt</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">SHIRTS</span>
+                                <h3 class="product-name">White Oxford Shirt</h3>
+                                <span class="product-price">$189</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Italian Leather Shoes</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">SHOES</span>
+                                <h3 class="product-name">Italian Leather Shoes</h3>
+                                <span class="product-price">$459</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Silk Tie Collection</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">ACCESSORIES</span>
+                                <h3 class="product-name">Silk Tie Collection</h3>
+                                <span class="product-price">$129</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Tailored Blazer</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">BLAZERS</span>
+                                <h3 class="product-name">Tailored Blazer</h3>
+                                <span class="product-price">$799</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Wool Overcoat</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">OUTERWEAR</span>
+                                <h3 class="product-name">Wool Overcoat</h3>
+                                <span class="product-price">$899</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Luxury Watch</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">ACCESSORIES</span>
+                                <h3 class="product-name">Luxury Watch</h3>
+                                <span class="product-price">$2,499</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-image-placeholder">Leather Briefcase</div>
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-secondary">Quick View</a>
+                                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <span class="product-category">BAGS</span>
+                                <h3 class="product-name">Leather Briefcase</h3>
+                                <span class="product-price">$649</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="shop.html" class="btn btn-ghost">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 8. CATEGORIES ========== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header animate">
+                <span class="section-label">BROWSE</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="category-grid">
+                <a href="shop.html" class="category-card animate">
+                    <div class="category-content">
+                        <h3 class="category-name">Suits &amp; Blazers</h3>
+                        <span class="category-count">48 Products</span>
+                    </div>
+                </a>
+                <a href="shop.html" class="category-card animate">
+                    <div class="category-content">
+                        <h3 class="category-name">Shirts &amp; Tops</h3>
+                        <span class="category-count">72 Products</span>
+                    </div>
+                </a>
+                <a href="shop.html" class="category-card animate">
+                    <div class="category-content">
+                        <h3 class="category-name">Shoes &amp; Accessories</h3>
+                        <span class="category-count">56 Products</span>
+                    </div>
+                </a>
+                <a href="shop.html" class="category-card animate">
+                    <div class="category-content">
+                        <h3 class="category-name">New Arrivals</h3>
+                        <span class="category-count">24 Products</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 9. STATS ========== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item animate">
+                    <span class="stat-number" data-count="15" data-suffix="+">0</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+                <div class="stat-item animate">
+                    <span class="stat-number" data-count="500" data-suffix="+">0</span>
+                    <span class="stat-label">Premium Products</span>
+                </div>
+                <div class="stat-item animate">
+                    <span class="stat-number" data-count="10000" data-suffix="+">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item animate">
+                    <span class="stat-number" data-count="50" data-suffix="+">0</span>
+                    <span class="stat-label">Countries Worldwide</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 10. EDITORIAL ========== -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="editorial-grid">
+                <div class="editorial-image slide-left animate">
+                    <div class="editorial-image-placeholder"></div>
+                </div>
+                <div class="editorial-content slide-right animate">
+                    <h3>The Art of Dressing Well</h3>
+                    <p>At Black Hill, we believe that exceptional clothing is more than fabric and thread &mdash; it is an extension of who you are. Every garment in our collection is meticulously crafted from the finest materials sourced from Italy, England, and Japan, shaped by master artisans who have dedicated their lives to the pursuit of sartorial perfection.</p>
+                    <p>Our commitment to timeless style over fleeting trends means that every Black Hill piece becomes a lasting investment in your wardrobe. From the boardroom to the evening out, dress with confidence knowing you carry decades of craftsmanship on your shoulders.</p>
+                    <a href="about.html" class="btn btn-ghost">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 11. NEWSLETTER ========== -->
+    <section class="section">
+        <div class="container">
+            <div class="newsletter-card animate">
+                <h3>Join The Black Hill Circle</h3>
+                <p>Get 15% off your first order and exclusive access to new collections</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 12. CART DRAWER ========== -->
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Shopping Bag</h3>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your bag is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span class="cart-subtotal-label">Subtotal</span>
+                <span class="cart-subtotal-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary">Checkout</button>
+            <a href="#" class="cart-continue">Continue Shopping</a>
+        </div>
+    </div>
+
+    <!-- ========== 13. FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">Black Hill</a>
+                    <p>Crafting exceptional menswear for the modern gentleman. Where tradition meets contemporary elegance.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Shop All</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping &amp; Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@blackhill.com">info@blackhill.com</a></li>
+                        <li><a href="tel:+15550000000">+1 (555) 000-0000</a></li>
+                        <li><a href="#">123 Fashion Ave, NYC</a></li>
+                        <li><a href="#">Mon-Sat: 10AM-8PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2024 Black Hill. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== 14. BACK TO TOP ========== -->
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
